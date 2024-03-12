@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Microblog.xsl"?>
+
+
+<microblog>
+  <users>
+    <user id="1" username="Alice">
+      <email>alice@example.com</email>
+    </user>
+    <user id="2" username="Bob">
+      <email>bob@example.com</email>
+    </user>
+  </users>
+  <posts>
+    <post id="1" user="1">
+      <title>Hello, World!</title>
+      <content>This is my first post on the micro blogging site.</content>
+      <comments>
+        <comment user="2">
+          <content>Hi Alice! Nice to meet you here.</content>
+        </comment>
+      </comments>
+    </post>
+    <post id="2" user="2">
+      <title>My second post</title>
+      <content>This is my second post on the micro blogging site.</content>
+      <comments>
+        <comment user="1">
+          <content>Hi Bob! How are you doing?</content>
+        </comment>
+      </comments>
+    </post>
+  </posts>
+</microblog>
