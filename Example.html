@@ -1,10 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/xsl" href="Microblog.xsl">
+  <meta charset="UTF-8">
+  <title>XSL TRANSFORMATION EXAMPLE</title>
+<!--   <link rel="stylesheet" type="text/xsl" href="Microblog.xsl"> -->
 </head>
 <body>
-  <xsl:import href="Microblog.xml"/>
-  <xsl:apply-imports/>
+  <div id="output"></div>
+
+  <script>
+    var xml = new XMLHttpRequest();
+    xml.open("GET", "Microblog.xml", false);
+    xml.send(null);
+
+    var xsl = new XMLHttpRequest();
+    xml.open("GET", "Microblog.xsl", false);
+    xml.send(null);
+
+    var processor = new XSLTprocessor();
+    processor.importStyleDocument(xsl.responseXML);
+
+    var resultDocument = processor.transformToDocument(xml.responseXML);
+    document.getElementById("output").appendChild(resultDocument.documentElement);
+  </script>
+
+  
+<!--   <xsl:import href="Microblog.xml"/>
+  <xsl:apply-imports/> -->
 </body>
 </html>
