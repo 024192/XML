@@ -1,0 +1,12 @@
+Here are three XPath expressions you can use to extract information from the XML document:
+
+1. Select all post authors:
+/microblogsite/post/author
+
+
+2. Select posts by a specific author (e.g., JohnDoe):
+/microblogsite/post[author='JohnDoe']
+
+
+3. Select posts published after a certain date (e.g., after 2022-01-01):
+/microblogsite/post[timestamp > '2022-01-01']

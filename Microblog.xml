@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="microblog.xsl"?>
+
+<microblog>
+    <post id="1">
+        <author>Budu</author>
+        <title>Empire Burlesque</title>
+        <content>This is my first post!</content>
+        <coutry>USA</coutry>
+        <timestamp>2024-03-27T13:58:32Z</timestamp>
+    </post>
+    <post id="2">
+        <author>Tina</author>
+        <title>Hide your Heart</title>
+        <content>Excited to join the microblogging world!</content>
+        <coutry>UK</coutry>
+        <timestamp>2024-03-27T14:03:47Z</timestamp>
+    </post>
+    <post id="3">
+        <author>Nii</author>
+        <title>Greatest Hits</title>
+        <content>Enjoying the sunny weather today.</content>
+        <coutry>Canada</coutry>
+        <timestamp>2024-03-27T15:20:05Z</timestamp>
+    </post>
+</microblog>

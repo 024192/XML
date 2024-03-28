@@ -1,0 +1,121 @@
+<html>
+
+<head>
+  <title>Microblogging Posts</title>
+  <style type="text/css">
+   body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+   }
+    td{
+      padding: 5px;
+      border: none;
+      border-right: 1px solid;
+    }
+    td:last-child{
+      border-right: none;
+    }
+  </style>
+</head>
+
+<body>
+  <table border="1">
+    <tr bgcolor="#9acd32">
+      <th style="text-align:left">Author</th>
+      <th style="text-align:left">Title</th>
+      <th style="text-align:left">Country</th>
+      <th style="text-align:left">Time</th>
+      <th style="text-align:left">Content</th>
+    </tr>
+    <xsl:for-each select="microblog/post">
+      <tr>
+        <td>
+          Budu
+        </td>
+        <td>
+          Empire Burlesque
+        </td>
+        <td>
+          USA
+        </td>
+        <td>
+          13:58
+        </td>
+        <td>This is my first post!</b>
+        </td>
+      </tr>
+      <tr>
+        <tr>
+          <td>
+            Tina
+          </td>
+          <td>
+            Hide your heart
+          </td>
+          <td>
+            UK
+          </td>
+          <td>
+            14:03
+          </td>
+          <td>Excited to join the microblogging world!</b>
+          </td>
+        </tr>
+      </tr>
+      <tr>
+        <tr>
+          <td>
+            Nii
+          </td>
+          <td>
+            Greatest Hits
+          </td>
+          <td>
+            Canada
+          </td>
+          <td>
+          15:20
+          </td>
+          <td>Enjoying the sunny weather today</b>
+          </td>
+        </tr>
+      </tr>
+      <tr>
+        <td>
+          Budu
+        </td>
+        <td>
+          Empire Burlesque
+        </td>
+        <td>
+          USA
+        </td>
+        <td>
+          13:58
+        </td>
+        <td>This is my first post!</b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Budu
+        </td>
+        <td>
+          Empire Burlesque
+        </td>
+        <td>
+          USA
+        </td>
+        <td>
+          13:58
+        </td>
+        <td>This is my first post!</b>
+        </td>
+      </tr>
+    </xsl:for-each>
+  </table>
+</body>
+
+</html>
